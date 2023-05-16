@@ -1,9 +1,8 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.jfrog.bintray'
-
 
 buildscript {
     repositories {
+        google()
         mavenCentral()
         jcenter()
         maven { url "https://jitpack.io" }
@@ -12,7 +11,6 @@ buildscript {
             name 'Google'
         }
         // Add Google's Maven repository (if it's not there already).
-        google()
     }
     dependencies {
         classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7'
@@ -80,33 +78,6 @@ artifacts {
     archives generateJavadocsJar
 }
 
-
-
-bintray {
-    Properties properties = new Properties()
-    properties.load(project.rootProject.file('local.properties').newDataInputStream())
-    user = properties.getProperty('bintray.user')
-    key = properties.getProperty('bintray.apikey')
-    configurations = ['archives']
-    pkg {
-        repo = 'io.github.memfis19'
-        name = 'annca'
-        userOrg = 'm-e-m-f-i-s'
-        desc = 'Android solution to simplify work with different camera apis.'
-        licenses = ['MIT']
-        labels = ['android', 'camera', 'photo', 'video']
-        websiteUrl = 'https://github.com/memfis19/Annca'
-        issueTrackerUrl = 'https://github.com/memfis19/Annca/issues'
-        vcsUrl = 'https://github.com/memfis19/Annca.git'
-        version {
-            name = PUBLISH_VERSION
-            vcsTag = PUBLISH_VERSION
-            desc = 'Minor fixes.'
-            released = new Date()
-
-        }
-    }
-}
 
 dependencies {
     implementation 'androidx.appcompat:appcompat:1.4.1'
