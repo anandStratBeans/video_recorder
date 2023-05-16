@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:keepScreenOn="true">
+    <TextView
+        android:id="@+id/tvInternetStrip"
+        android:background="@color/color_green"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:textColor="@color/color_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <io.github.memfis19.annca.internal.ui.view.AspectFrameLayout
+        android:id="@+id/previewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvInternetStrip"
+        android:layout_centerInParent="true" />
+
+    <FrameLayout
+        android:id="@+id/userContainer"
+        android:layout_below="@+id/tvInternetStrip"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/tvLblRecord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:textColor="#d32f2f"
+        android:textSize="30dp"
+
+        android:text="@string/msgStartRec"
+        android:visibility="visible" />
+
+</RelativeLayout>

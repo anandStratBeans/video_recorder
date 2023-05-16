@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cancel_label">Annuller</string>
+    <string name="ok_label">Ok</string>
+
+    <string name="settings_video_quality_title">Video størrelse %s</string>
+    <string name="settings_photo_quality_title">Billed størrelse</string>
+
+    <!-- Preview Activity -->
+    <string name="preview_controls_confirm">Færdig</string>
+    <string name="preview_controls_retake">Gentag</string>
+    <string name="preview_controls_cancel">Fortryd</string>
+    <string name="preview_controls_crop">Beskær</string>
+    <string name="preview_controls_original_ratio_label">Original</string>
+
+
+    <string name="repeat_label">Record Again</string>
+    <string name="success_label">Submit</string>
+    <string name="back_label">Back</string>
+
+    <string name="cancelMessage">Are you sure, you want to Cancel?\n\nIf you cancel then your recording won\'t get submitted and saved, and you will be redirected to home page.\n\nAre you sure?</string>
+    <string name="repeatMessage">Do you want to record your video again?</string>
+    <string name="successMessage">Are you sure you want to Submit?</string>
+    <string name="backMessage">Are you sure you want to go back?</string>
+    <string name="backMessage1">Are you sure, you want to Back?\n\nIf you back then your recording won\'t get submitted and saved, and you will be redirected to home page.\n\nAre you sure?</string>
+    <string name="msgStartRec">Click Rounded Red button to\nstart Video recording</string>
+    <string name="online">Back Online</string>
+    <string name="offline">Internet connection could not be established. Please try later.</string>
+    <string name="recordVideo">Record Video</string>
+    <string name="recordVideoMessage">This will start the recording.\n\nYou will be able to record for %1$s mins.\n\nDo you want to proceed?</string>
+    <string name="recordVideoMessage1">This will start the recording.\n\nYou will be able to record a video Minimum %1$s and Maximum %2$s.\n\nDo you want to proceed?</string>
+    <string name="videoDialogMessage">You must record a video response of</string>
+    <string name="videoDialogMessageEnd">in length</string>
+    <string name="lblAnd">and</string>
+    <string name="videoMessageEnd">in length</string>
+    <string name="messageMin">minimum %1$s</string>
+    <string name="messageMax">maximum %1$s</string>
+    <string name="clickToContinue">\n\nClick OK to continue</string>
+    <string name="errMsgMinTime">You are below minimum recording time of %1$s</string>
+    <string name="minute">Minute</string>
+    <string name="seconds">Seconds</string>
+    <string name="msgSaveRecording">Click on this button to save your Recording</string>
+    <string name="saveCloseLbl">Save and Close</string>
+    <string name="dontSaveLbl">Don’t Save</string>
+    <string name="backCancleMsg">You have a recording that needs to be saved.\nClick Save and Close to upload this recording and get back to assessment</string>
+
+    <string name="messageNetworkType">\n\nNOTE : For better quality recording, connect to a WI-FI network.</string>
+    <string name="messageTipNetworkUpload">TIP : Upload works faster on a Wi-Fi network</string>
+</resources>
